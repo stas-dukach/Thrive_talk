@@ -77,7 +77,9 @@
     background-color: $blueColor;
     border-radius: 50px;
 
-    transition: transform 0.5s, background-color 0.5s;
+    transition: transform 1s, background-color;
+    transition-duration: 1s;
+
 
     &:hover {
       transform: scale(1.1);
@@ -89,8 +91,10 @@
 
 @media screen and (max-width: $smallScreen) {
   .header {
-    background: center/ cover no-repeat url("../images/photo5244513990699233475.jpg");
+    //background: center/ cover no-repeat url("../images/photo5244513990699233475.jpg");
+    background-color: #edfdff;
     width: 100%;
+    transition-duration: 1s;
 
     &__logo {
       margin-left: 0;
@@ -108,6 +112,7 @@
       position: absolute;
       top: 90px;
       left: 30px;
+      transition-duration: 1s;
     }
   }
 }
